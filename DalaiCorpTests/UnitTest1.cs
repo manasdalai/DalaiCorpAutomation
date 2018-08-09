@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DalaiCorpAutomation;
 
 namespace DalaiCorpTests
 {
@@ -9,6 +10,8 @@ namespace DalaiCorpTests
         [TestMethod]
         public void TestMethod1()
         {
+            var c = new Class1();
+            c.Go();
         }
     }
 }
