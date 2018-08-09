@@ -11,13 +11,10 @@ namespace DalaiCorpAutomation
     public class Class1
     {
         public void Go()
-        {
-           
+        {           
             IWebDriver driver = new ChromeDriver(@"C:\Manas Stuffs\Trainings and Tutorials\AutomationFramework\UsingCsharpVisualStudio\DalaiCorpAutomation\packages\Selenium.WebDriver.ChromeDriver.2.40.0\driver\win32");
+            driver.Navigate().GoToUrl("http://google.com");
             
-            driver.Navigate().GoToUrl("www.google.com");
-
-
         }
     }
 }
