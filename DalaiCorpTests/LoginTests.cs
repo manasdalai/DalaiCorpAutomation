@@ -7,12 +7,21 @@ namespace DalaiCorpTests
     [TestClass]
     public class LoginTests
     {
+        [TestInitialize]
+        public void Init()
+        {
+            Driver.Initialize();
+        }
+
         [TestMethod]
         public void Admin_User_Can_Login()
         {
             LoginPage.GoTo();
-           // LoginPage.SignUpAs("Admin").WithPassword("Password").Login();
+            LoginPage.LoginAs("Admin").WithPassword("Password").Login();
             //Assert.IsTrue(DashBoardPage.IsAt, "Failed to Login");
         }
+
+        [TestCleanup]
+        
     }
 }
