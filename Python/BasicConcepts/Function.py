@@ -13,4 +13,7 @@ def fib(n):
 ''' Now call the function fib
 and print the results'''
 
-#fib(200)
+# fib(200)
+
+if round(.1 + .1 + .1, 10) == round(.3, 10):
+    print("pass")
